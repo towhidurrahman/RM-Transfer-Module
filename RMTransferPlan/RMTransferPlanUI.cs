@@ -50,7 +50,7 @@ namespace RMTransferPlan
             {
                 dataGridViewShow.Columns[i].Name = column[i];
             }
-            //******************Data generate to cmbProducitonGroup*********************
+            //*****************Data generate to cmbProducitonGroup*********************
             dt = sq.get_rs("Select RTRIM(SEGVAL)+'-'+ LTRIM([desc]) AS des from ICSEGv where segment = 2");
 
             foreach (DataRow r in dt.Rows)
